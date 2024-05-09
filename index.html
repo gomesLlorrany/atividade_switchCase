@@ -1,0 +1,96 @@
+[11:38] BRENDA LORANI GOMES MARCIEL
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é a sua cor favorita?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+ 
+        .container {
+            text-align: center;
+        }
+ 
+        h1 {
+            font-size: 42px;
+            color: #82c6c6; /* Mesma cor do botão enviar */
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.0); /* Adiciona sombra ao texto */
+        }
+ 
+        #color-square {
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 5px solid #d8d8d8;
+            border-radius: 20px;
+            display: inline-block;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+ 
+        select {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #d8d8d8;
+            border-radius: 10px;
+            font-size: 18px;
+            margin-top: 20px;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') no-repeat right 15px center;
+            background-size: 20px;
+        }
+ 
+        button {
+            background-color: #82c6c6;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+ 
+        button:hover {
+            background-color: #6ca0a0;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="container">
+        <h1>Qual é a sua cor favorita?</h1>
+        <div id="color-square">
+            <form method="Post" action="script.php">
+                <label for="favcolor">Escolha sua cor favorita</label>
+                <select name="favcolor" id="favcolor">
+                    <option value="selected"></option>
+                    <option value="vermelho">Vermelho</option>
+                    <option value="azul">Azul</option>
+                    <option value="verde">Verde</option>
+                    <option value="nenhum">Nenhum</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+ 
+</html>
